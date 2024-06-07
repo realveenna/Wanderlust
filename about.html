@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="tourism.png">
+    <title> Wanderlust: About Us & Contact</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="website-con">
+        <header>
+            <div class="logo">
+                <a href="index.html"> <img src="tourism.png" alt="logo"> <span> Wanderlust</span></a>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <div class="line">
+                        <i class="bx bx-menu bx-lg"></i>   
+                    </div>
+                    <div class="x">
+                        <i class='bx bx-x bx-lg'></i>
+                    </div>
+                </div>
+                <div class="links">
+                    <ul>    
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="category.html">CATEGORY</a></li>
+                        <li><a href="itinerary.html">ITINERARY</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a onclick="scrollToTarget(contact)">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-padding">
+                <div class="about-us">
+                    <div class="about-us-photo">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="wooden boat on a lake">
+                    </div>
+                    <div class="about-us-text">
+                        <h2>About <span>Us</span></h2>
+                        <p>Founded in June 2024, we are dedicated to simplifying the travel planning process. Our personalized itineraries, curated recommendations, and expert advice ensure that every journey is unforgettable. Start planning your dream vacation with us today and discover the world like never before!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="index-banner" id="index-overlay">
+                <div class="main-padding">
+                    <h1>Our <span>Team</span></h1>
+                    <div class="team">
+                        <div>
+                            <div class="team-photo">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A portrait of a man">
+                            </div>
+                            <h3> Sample Name</h3>
+                        </div>
+                        <div>
+                            <div class="team-photo">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A portrait of a man">
+                            </div>
+                            <h3> Sample Name</h3>
+                        </div>
+                        <div>
+                            <div class="team-photo">
+                                <img src="https://images.unsplash.com/photo-1590086782792-42dd2350140d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A portrait of a man">
+                            </div>
+                            <h3> Sample Name</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-padding" id="contact">
+                <h2>Our <span>Contact</span></h2>
+                <div class="contact">
+                    <div class="contact-details">
+                        <div>
+                            <h3>Contact Details</h3>
+                            <p><i class='bx bx-envelope'></i>Email: example@example.com</p>
+                            <p><i class='bx bx-phone' ></i>Phone: +1 234 567 890</p>
+                            <p><i class='bx bx-map' ></i>Address: 123 Street, City, Country, Postcode</p>
+                        </div>
+                        <div class="map">
+                            <div><h3>Our Map</h3></div>
+                            <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35829.81233908001!2d-4.341434006122158!3d55.8563634192222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488845944b255e79%3A0x7c700b07e83071e3!2sGlasgow%20Clyde%20College%20-%20Anniesland%20Campus!5e0!3m2!1sen!2suk!4v1717681030716!5m2!1sen!2suk"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Contact Form</h3>
+                        <form onsubmit="contactFormMessage(event)">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="text" name="subject" placeholder="Subject">
+                            <input type="text" name="message" placeholder="Your Message..." pattern=".{10,}" title="The message must be at least 10 characters long." required>
+                            <input type="submit" value="Submit">    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-top">
+                <div class="logo">
+                    <a href="index.html"> <img src="tourism.png" alt="logo"> <span> Wanderlust</span></a>
+                </div> 
+                <div class="soc-links">
+                    <div>
+                        <a href="https://x.com/Glasgow_Clyde"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.facebook.com/GlasgowClyde"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGKdn_RbwUCuAAAAY_PM0mgGjsU3ij9sZhp9BRPuCDh0D4Ftt3Pwpyjpw5hjiVEVfDcvSmAv3k7yQqoT6ii9-3tURb_R5SJRQujphGORYgLZIAJERWBgUAG9EG40C43_08tj9s=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fglasgow-clyde-college"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://www.instagram.com/glasgowclyde/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.youtube.com/user/GlasgowClyde"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://www.tiktok.com/@glasgow_clyde_college"><i class='bx bxl-tiktok'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <b>Feel free to get in touch with us!</b>
+                    <ul>
+                        <li>Email: example@example.com</li>
+                        <li>Phone: +1 234 567 890</li>
+                        <li>Address: 123 Street, City, Country, Postcode</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <b>Sitemap:</b>
+                    <ul>    
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="category.html">Category</a></li>
+                        <li><a href="itinerary.html">Itinerary</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a onclick="scrollToTarget(contact)">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <b> Legal Information</b>
+                    <ul>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Terms of Service</a></li>
+                     <li><a href="#">Cookie Policy</a></li>
+                     <li><a href="#">Disclaimer</a></li>
+                   </ul>
+                 </div>
+                <div class="footer-col newsletter">
+                    <h3> Newsletter: </h3>
+                    <p> Enter your email address for latest news and updates!</p>
+                    <form onsubmit="showThankYou(event)">
+                        <input type="email" placeholder="Email Address">
+                        <input type="submit" value="Subscribe!">
+                    </form>
+                </div>
+            </div>
+            <div class="copyrights1">
+                <small> © 2024 Wanderlust. All rights reserved. </small>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
